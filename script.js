@@ -1,6 +1,10 @@
-const clickBtn = document.getElementById('confirmBtn');
+const form = document.getElementById('formSelectPlayer');
+const selectPlayer = document.getElementById('playerSelect');
 const clickConfirm = document.getElementById('clickConfirm');
 
-clickBtn.addEventListener("click", clickConfirm.document.innerHTML = "Vous avez cliqué sur le bouton !");
 
+form.addEventListener('submit', function(event){
+    event.preventDefault();
+    clickConfirm.innerHTML = 'Your favorite player is : '+ selectPlayer.value;
 
+});

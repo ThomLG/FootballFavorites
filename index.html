@@ -6,34 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Git Project</title>
+    <title>Football Favorites</title>
 </head>
 
 <body>
-    <h1>Git project</h1>
+    <h1>Football Favorites</h1>
     <div>
         <h2>Who's your favorite football player ?</h2>
 
-        <label for="playerSelect">Choose a player</label>
-        <select name="player" id="playerSelect">
-            <option value="zidane">Zinedine Zidane</option>
-            <option value="ronaldo">Ronaldo</option>
-            <option value="ronaldinho">Ronaldinho</option>
-            <option value="raul">Raul</option>
-            <option value="delPiero">Alessandro Del Piero</option>
-            <option value="pirlo">Andrea Pirlo</option>
-            <option value="messi">Lionel Messi</option>
-            <option value="neymar">Neymar Jr</option>
-            <option value="christianoRonaldo">C.Ronaldo</option>
-            <option value="rivaldo">Rivaldo</option>
-            <option value="mbappe">Kylian Mbappé</option>
-        </select>
+        <form action="" method="GET" id="formSelectPlayer">
+            <fieldset>
+            <label for="playerSelect">Choose a player</label>
+            <select name="player" id="playerSelect">
+                <option value="">--- Choose a player --- </option>
+                <option value="Zinedine Zidane">Zinedine Zidane</option>
+                <option value="Ronaldo">Ronaldo</option>
+                <option value="Ronaldinho">Ronaldinho</option>
+                <option value="Raul">Raul</option>
+                <option value="Del Piero">Alessandro Del Piero</option>
+                <option value="Pirlo">Andrea Pirlo</option>
+                <option value="Messi">Lionel Messi</option>
+                <option value="Neymar Junior">Neymar Junior</option>
+                <option value="Christiano Ronaldo">Christiano Ronaldo</option>
+                <option value="Rivaldo">Rivaldo</option>
+                <option value="Kylian Mbappé">Kylian Mbappé</option>
+            </select>
+        </fieldset>
+            <button id="confirmBtn" value="Confirm">Confirm</button>
+        </form>
     </div>
 
-    <button id="confirmBtn">Confirm</button>
     <p id="clickConfirm"></p>
 
-    
+
     <script src="script.js"></script>
 </body>
 
